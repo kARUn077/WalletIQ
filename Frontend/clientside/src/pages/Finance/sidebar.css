@@ -1,0 +1,135 @@
+.sidebar-container {
+    margin: 1.5rem;
+    padding: 2rem 1.5rem;
+    width: 280px;
+    height: calc(100vh - 3rem);
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .sidebar-container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 1rem;
+        border-radius: 0;
+        flex-direction: row;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        justify-content: space-around;
+    }
+
+    .user-profile {
+        display: none !important;
+    }
+}
+
+.user-profile {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 12px;
+    transition: background 0.2s;
+}
+
+.user-profile:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.user-profile img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+}
+
+.user-name h5 {
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.user-name p {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+.sidebar-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    color: var(--text-muted);
+    transition: all 0.2s ease;
+    gap: 1rem;
+}
+
+.sidebar-link i {
+    font-size: 1.25rem;
+    width: 24px;
+    text-align: center;
+}
+
+.sidebar-link span {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.sidebar-link:hover {
+    background: rgba(79, 70, 229, 0.05);
+    color: var(--primary-color);
+}
+
+.active-link {
+    background: var(--primary-color) !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.active-link i,
+.active-link span {
+    color: white !important;
+}
+
+.bottom-nav {
+    margin-top: auto;
+    padding-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .bottom-nav {
+        display: none;
+    }
+}

@@ -1,0 +1,68 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+.input-control-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-control-form input,
+.input-control-form select,
+.input-control-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.input-control-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem !important;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Category Breakdown in Expenses/Incomes */
+.category-breakdown {
+  margin-bottom: 2rem;
+}
+
+.category-breakdown div {
+  background: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-main) !important;
+  font-weight: 500 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 8px !important;
+}

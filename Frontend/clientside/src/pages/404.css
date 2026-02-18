@@ -1,0 +1,59 @@
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color);
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-container {
+  max-width: 500px;
+  background: var(--card-bg);
+  padding: 4rem 2rem;
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.error-code {
+  font-size: 8rem;
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--primary-color), var(--indigo-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.error-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.back-home-btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.back-home-btn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.2);
+}
